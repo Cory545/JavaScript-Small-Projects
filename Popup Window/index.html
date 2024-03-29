@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Window</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="monkey">
+        <img id="image" src="Proboscis-monkey-1X1.webp">
+        
+        <p id="Caught-text">"Psssst... Grab me some bananas whilst theres no guards lookin'! <br>
+            I've barely eaten."</p>
+    </div>
+    <div class="container">
+    <button type="submit" class="btn" onclick="openPopup(), changeImage()">Grab bananas</button>
+    <div class="popup" id="popup">
+        <img src="404-tick.png">
+        <h2>Oi! You shouldn't be doing that!</h2>
+        <p>You're lucky I saw you before the guards did. This monkey is a known overeater. Don't listen to him anymore.</p>
+        <button type="button" onclick="closePopup()">I won't do it again :(</button>
+    </div>
+    </div>
+    <script>
+        let  popup = document.getElementById("popup");
+        
+        function changeImage(){
+            var img = document.getElementById('image');
+            img.src = 'Monkey.jpg';
+            document.querySelector('#Caught-text')
+            .textContent = "Whoops! Well, I will try with the next tourist."
+        }
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
