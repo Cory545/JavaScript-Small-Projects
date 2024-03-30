@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    margin: 25%;
+}
+
+#buttons{
+    border: 3px solid darkgreen;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: darkolivegreen;
+    height: 400px;
+    width: 450px;
+}
+.Buttons{
+    padding: 16px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin: 20px;
+    height: fit-content;
+    font-size: 20px;
+}
+
+#countdown{
+    border: 5px solid darkgreen;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    width: 450px;
+    height: 100%;
+    font-size: 200px;
+    background-color: gray;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
